@@ -27,7 +27,7 @@ inputContainer.appendChild(customTextContainer);
 
 const inputField = document.createElement('input');
 inputField.id = 'amountInput';
-inputField.placeholder = 'Enter amount to earn';
+inputField.placeholder = 'Enter amount of cookies';
 inputField.style.padding = '5px';
 inputField.style.fontSize = '16px';
 inputField.style.marginRight = '10px';
@@ -62,7 +62,7 @@ function updateGameEarn() {
         Game.Earn(amount);  
         document.getElementById('amountInput').value = ''; 
     } else {
-        alert("Enter a valid number, smartass.");
+        alert("Unvalid number, sorry.");
     }
 }
 
